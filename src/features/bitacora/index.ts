@@ -1,0 +1,1 @@
+export { default as BitacoraPage } from "./pages/BitacoraPage"; 
