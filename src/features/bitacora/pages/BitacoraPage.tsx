@@ -48,7 +48,7 @@ const BitacoraPage: React.FC = () => {
          Bitácora del Sistema
       </Typography>
 
-      {/* Buscador */}
+      {/* EL BUSCADOR ! */}
       <TextField
         label="Buscar por nombre o email..."
         variant="outlined"
@@ -62,7 +62,7 @@ const BitacoraPage: React.FC = () => {
         <BitacoraTable bitacora={paginatedData} />
       </Paper>
 
-      {/* Paginación */}
+      {/* LINKS PAGINACION */}
       {filteredBitacora.length > 0 && (
         <Box display="flex" justifyContent="center" mt={3}>
           <Pagination

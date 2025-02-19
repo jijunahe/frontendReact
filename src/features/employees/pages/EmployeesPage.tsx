@@ -12,7 +12,7 @@ import { Box, Button, Typography, Paper, TextField, Pagination } from "@mui/mate
 import AddIcon from "@mui/icons-material/Add";
 
 const MySwal = withReactContent(Swal);
-const ITEMS_PER_PAGE = 6; // Cantidad de empleados por página
+const ITEMS_PER_PAGE = 6; //Paginación
 
 const EmployeesPage = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -75,7 +75,7 @@ const EmployeesPage = () => {
     });
   };
 
-  // Filtrado de empleados según el término de búsqueda
+  // Filtrado de empleados ! ! !
   useEffect(() => {
     const filteredData = employees.filter(
       (emp) =>
@@ -86,7 +86,7 @@ const EmployeesPage = () => {
 
     setFilteredEmployees(filteredData);
     setTotalPages(Math.ceil(filteredData.length / ITEMS_PER_PAGE));
-    setCurrentPage(1); // Reiniciar a la primera página al filtrar
+    setCurrentPage(1); // Volver a la página 1 
   }, [searchTerm, employees]);
 
   // Obtener los empleados de la página actual
@@ -99,8 +99,7 @@ const EmployeesPage = () => {
         Lista de Empleados
       </Typography>
 
-      {/* Buscador */}
-      <TextField
+       <TextField
         label="Buscar empleado..."
         variant="outlined"
         fullWidth
@@ -122,8 +121,7 @@ const EmployeesPage = () => {
       <Paper elevation={3} sx={{ p: 2 }}>
         <EmployeesTable employees={paginatedEmployees} onEdit={handleEditEmployee} onDelete={loadEmployees} />
       </Paper>
-
-      {/* Controles de paginación */}
+ 
       {filteredEmployees.length > 0 && (
         <Box display="flex" justifyContent="center" mt={3}>
           <Pagination

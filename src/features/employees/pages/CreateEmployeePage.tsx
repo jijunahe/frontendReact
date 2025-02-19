@@ -30,8 +30,8 @@ const CreateEmployeePage = () => {
     email: "",
     cargo: "",
     documento_identidad: "",
-    fecha_nacimiento: dayjs().format("YYYY-MM-DD"), // Asegurar formato
-    fecha_ingreso: dayjs().format("YYYY-MM-DD"), // Asegurar formato
+    fecha_nacimiento: dayjs().format("YYYY-MM-DD"),  
+    fecha_ingreso: dayjs().format("YYYY-MM-DD"),  
     estado: "activo",
   });
 

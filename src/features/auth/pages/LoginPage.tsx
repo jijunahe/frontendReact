@@ -60,17 +60,17 @@ const LoginPage = () => {
           borderRadius: 3,
         }}
       >
-        {/* Icono */}
+         
         <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
           <LockOutlinedIcon />
         </Avatar>
 
-        {/* Título */}
+        
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
 
-        {/* Formulario */}
+        
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3, width: "100%" }}>
           <TextField
             margin="normal"
@@ -91,10 +91,10 @@ const LoginPage = () => {
             required
           />
 
-          {/* Recordar Sesión */}
+          
           <FormControlLabel control={<Checkbox color="primary" />} label="Remember me" />
 
-          {/* Botón Login */}
+           
           <Button
             type="submit"
             fullWidth
@@ -106,7 +106,7 @@ const LoginPage = () => {
             {loading ? "Loading..." : "Sign In"}
           </Button>
 
-          {/* Links */}
+          
           <Typography variant="body2" align="center">
             <a href="#" style={{ color: "#1976d2", textDecoration: "none" }}>
               Forgot password?
@@ -119,7 +119,7 @@ const LoginPage = () => {
         </Box>
       </Box>
 
-      {/* Footer */}
+      
       <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 5 }}>
         {"Copyright © "}
         Pruebas  {new Date().getFullYear()}

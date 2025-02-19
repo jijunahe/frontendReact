@@ -58,15 +58,13 @@ const EmployeeForm: React.FC<EmployeeFormProps> = ({ onSave, positions, employee
   return (
     <Container maxWidth="sm">
        
-        {/* Formulario */}
-        <Box component="form">
+         <Box component="form">
           <TextField fullWidth label="Nombres" name="nombres" value={formData.nombres} onChange={handleChange} required sx={{ mb: 2 }} />
           <TextField fullWidth label="Apellidos" name="apellidos" value={formData.apellidos} onChange={handleChange} required sx={{ mb: 2 }} />
           <TextField fullWidth type="email" label="Email" name="email" value={formData.email} onChange={handleChange} required sx={{ mb: 2 }} />
           <TextField fullWidth label="Documento Identidad" name="documento_identidad" value={formData.documento_identidad} onChange={handleChange} required sx={{ mb: 2 }} />
 
-          {/* Selector de Cargos */}
-          <FormControl fullWidth sx={{ mb: 2 }}>
+           <FormControl fullWidth sx={{ mb: 2 }}>
             <InputLabel>Cargo</InputLabel>
             <Select name="cargo" value={formData.cargo || ""} onChange={handleChange} required>
               <MenuItem value="">Seleccione un cargo</MenuItem>
@@ -76,14 +74,12 @@ const EmployeeForm: React.FC<EmployeeFormProps> = ({ onSave, positions, employee
             </Select>
           </FormControl>
 
-          {/* Fechas */}
-          <Box display="flex" gap={2} sx={{ mb: 2 }}>
+           <Box display="flex" gap={2} sx={{ mb: 2 }}>
             <TextField fullWidth type="date" label="Fecha Nacimiento" name="fecha_nacimiento" value={formData.fecha_nacimiento} onChange={handleChange} required />
             <TextField fullWidth type="date" label="Fecha Ingreso" name="fecha_ingreso" value={formData.fecha_ingreso} onChange={handleChange} required />
           </Box>
 
-          {/* Estado */}
-          <FormControl fullWidth sx={{ mb: 3 }}>
+           <FormControl fullWidth sx={{ mb: 3 }}>
             <InputLabel>Estado</InputLabel>
             <Select name="estado" value={formData.estado || ""} onChange={handleChange} required>
               <MenuItem value="activo">Activo</MenuItem>
@@ -94,8 +90,7 @@ const EmployeeForm: React.FC<EmployeeFormProps> = ({ onSave, positions, employee
             </Select>
           </FormControl>
 
-          {/* Botones */}
-          <Box display="flex" justifyContent="space-between">
+           <Box display="flex" justifyContent="space-between">
             <Button variant="contained" color="secondary" onClick={() => Swal.close()}>
               Cancelar
             </Button>

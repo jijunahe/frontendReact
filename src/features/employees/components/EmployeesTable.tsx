@@ -37,7 +37,7 @@ const EmployeesTable: React.FC<EmployeesTableProps> = ({ employees, onEdit, onDe
       try {
         await deleteEmployee(id);
         Swal.fire("Eliminado", "El empleado ha sido eliminado.", "success");
-        onDelete(); // Recargar la lista
+        onDelete(); // Recarga la lista de los empleados que se ven en la tabla
       } catch (error) {
         Swal.fire("Error", "No se pudo eliminar el empleado.", "error");
       }

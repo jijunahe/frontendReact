@@ -4,7 +4,7 @@ export interface BitacoraEvent {
     id: number;
     name: string;
     email: string;
-  } | null; // Puede ser "null" si no hay usuario registrado.
+  } | null; //   si no hay usuario registrado.
   accion: string;
   tabla_afectada: string;
   detalles:  string  ;

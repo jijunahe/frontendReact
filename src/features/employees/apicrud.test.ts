@@ -28,7 +28,7 @@ describe("API de empleados con autenticación", () => {
   
     authToken = await login("test@test.com", "123456"); // Usuario de prueba
      
-    console.log(" Token obtenido en beforeAll:", authToken); // Ver si el token es correcto
+    console.log(" Token obtenido en beforeAll:", authToken);  
   });
   
 

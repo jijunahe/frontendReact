@@ -79,17 +79,17 @@ const RegisterPage = () => {
           borderRadius: 3,
         }}
       >
-        {/* Icono */}
+         
         <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
           <LockOutlinedIcon />
         </Avatar>
 
-        {/* Título */}
+         
         <Typography component="h1" variant="h5">
           Registrarse
         </Typography>
 
-        {/* Formulario */}
+        
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3, width: "100%" }}>
           <TextField
             margin="normal"
@@ -128,7 +128,7 @@ const RegisterPage = () => {
             required
           />
 
-          {/* Botón de Registro */}
+         
           <Button
             type="submit"
             fullWidth
@@ -140,7 +140,7 @@ const RegisterPage = () => {
             {loading ? "Registrando..." : "Registrarse"}
           </Button>
 
-          {/* Link para iniciar sesión */}
+           
           <Typography variant="body2" align="center">
             ¿Ya tienes una cuenta?{" "}
             <a href="/login" style={{ color: "#1976d2", textDecoration: "none" }}>
@@ -150,10 +150,10 @@ const RegisterPage = () => {
         </Box>
       </Box>
 
-      {/* Footer */}
+      
       <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 5 }}>
         {"Copyright © "}
-        Your Website {new Date().getFullYear()}
+        Pruebas {new Date().getFullYear()}
       </Typography>
     </Container>
   );

@@ -34,7 +34,7 @@ const BitacoraTable: React.FC<BitacoraTableProps> = ({ bitacora }) => {
                 color: "white",
                 fontWeight: "bold",
                 border: "1px solid #ddd",
-                width: "250px", // Mantener un ancho fijo
+                width: "250px",  
                 maxWidth: "250px",
                 overflow: "hidden",
                 textOverflow: "ellipsis",

@@ -25,8 +25,8 @@ export const createEmployee = async (employeeData: any) => {
         title: "Éxito",
         text: "Empleado creado correctamente",
         icon: "success",
-        allowOutsideClick: false, // Evita que el usuario lo cierre haciendo clic fuera
-        showConfirmButton: true, // Muestra el botón "OK"
+        allowOutsideClick: false,  
+        showConfirmButton: true,  
       });
       return response.data;
     } catch (error) {
@@ -46,8 +46,8 @@ export const createEmployee = async (employeeData: any) => {
         title: "Éxito",
         text: "Empleado actualizado correctamente",
         icon: "success",
-        allowOutsideClick: false, // Evita que el usuario lo cierre haciendo clic fuera
-        showConfirmButton: true, // Muestra el botón "OK"
+        allowOutsideClick: false,  
+        showConfirmButton: true,  
       });
       return response.data;
     } catch (error) {
